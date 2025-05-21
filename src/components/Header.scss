@@ -1,0 +1,122 @@
+.header {
+  background-color: var(--bg);
+  color: var(--text);
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text);
+    z-index: 1001;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+
+    .bar {
+      width: 25px;
+      height: 3px;
+      background-color: var(--text);
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+  }
+
+  .nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg);
+    padding: 2rem;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      li a {
+        text-decoration: none;
+        color: var(--text);
+        font-size: 1.2rem;
+        font-weight: 500;
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+
+    &.open {
+      transform: translateY(0);
+    }
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 900;
+  }
+
+  // Desktop
+  @media (min-width: 768px) {
+    .menu-toggle {
+      display: none;
+    }
+
+    .nav {
+      position: static;
+      transform: none;
+      padding: 0;
+      background: transparent;
+
+      ul {
+        flex-direction: row;
+        gap: 2rem;
+      }
+    }
+
+    .overlay {
+      display: none;
+    }
+  }
+}
