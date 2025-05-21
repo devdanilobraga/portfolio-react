@@ -10,6 +10,11 @@ function Header() {
     document.body.classList.toggle('dark-theme', darkMode);
   }, [darkMode]);
 
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? 'hidden' : 'auto';
+  }, [menuOpen]);
+
+
   // Fecha o menu ao clicar fora dele
   useEffect(() => {
     const handleOutsideClick = (e) => {
@@ -26,7 +31,6 @@ function Header() {
   return (
     <header className="header">
       <div className="container">
-        <h1 className="logo">Danilo Braga</h1>
 
         <div className="header-actions">
           <button className="theme-toggle" onClick={() => setDarkMode(!darkMode)}>
@@ -39,7 +43,6 @@ function Header() {
             <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
           </button>
         </div>
-
         <nav className={`nav ${menuOpen ? 'open' : ''}`}>
           <ul>
             <li><a href="#home" onClick={() => setMenuOpen(false)}>Início</a></li>

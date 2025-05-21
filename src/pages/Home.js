@@ -1,7 +1,14 @@
+import './Home.scss';
+
 function Home() {
   return (
     <div id="home">
-      <h1>Bem-vindo ao meu portfólio!</h1>
+     <div className="logo">
+        <h4>
+          <span>Danilo Braga<br />Desenvolvedor Web</span>
+        </h4>
+      </div>
+
     </div>
   );
 }
