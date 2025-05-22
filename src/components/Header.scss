@@ -1,3 +1,4 @@
+
 .header {
   background-color: var(--bg);
   color: var(--text);
@@ -104,16 +105,36 @@
     }
 
     .nav {
-      position: static;
-      transform: none;
-      padding: 0;
-      background: transparent;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background-color: var(--bg);
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+      z-index: 1000;
+      padding: 0 2rem;
 
       ul {
-        flex-direction: row;
-        gap: 2rem;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        gap: 1.5rem;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+      }
+
+      &.open {
+        max-height: 500px; // ou o valor necessário para caber os itens
+        padding: 2rem;
+        ul {
+          opacity: 1;
+        }
       }
     }
+
 
     .overlay {
       display: none;

@@ -1,0 +1,96 @@
+h4 {
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  text-align: center;
+  padding: 1.5em 0;
+  margin: 2em auto;
+  width: 90%;
+  max-width: 40em;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+h4::before,
+h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: url(https://img.lovepik.com/bg/20240416/Stunning-3D-Illustration-Futuristic-Tech-Style-Neon-Light-Stage-with_5839131_wh1200.jpg) repeat-x;
+  background-size: auto; /* permite a repetição horizontal */
+  animation: scrollLine 30s linear infinite;
+}
+
+h4::before {
+  top: 0;
+}
+
+h4::after {
+  bottom: 0;
+}
+
+h4 span {
+  text-align: center;
+  font: 700 2.5em/1 "Oswald", sans-serif;
+  letter-spacing: 0;
+  padding: 0.25em 0 0.325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+
+  background: url(https://img.lovepik.com/bg/20240416/Stunning-3D-Illustration-Futuristic-Tech-Style-Neon-Light-Stage-with_5839131_wh1200.jpg) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+
+/* Animação do texto */
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Animação das linhas */
+@keyframes scrollLine {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  h4 {
+    width: 80%;
+    padding: 1em 0;
+  }
+
+  h4 span {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  h4 {
+    font-size: 12px;
+    width: 90%;
+    padding: 1em 0;
+  }
+
+  h4 span {
+    font-size: 1.5em;
+  }
+}
