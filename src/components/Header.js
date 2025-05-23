@@ -1,6 +1,7 @@
 import './Header.scss';
 import { useState, useEffect } from 'react';
 import { Moon, Sun } from 'lucide-react';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,8 +15,6 @@ function Header() {
     document.body.style.overflow = menuOpen ? 'hidden' : 'auto';
   }, [menuOpen]);
 
-
-  // Fecha o menu ao clicar fora dele
   useEffect(() => {
     const handleOutsideClick = (e) => {
       if (!e.target.closest('.header')) {
@@ -31,30 +30,28 @@ function Header() {
   return (
     <header className="header">
       <div className="container">
-
         <div className="header-actions">
           <button className="theme-toggle" onClick={() => setDarkMode(!darkMode)}>
             {darkMode ? <Sun size={20} /> : <Moon size={20} />}
           </button>
-
           <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
             <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
             <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
             <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
           </button>
         </div>
+
         <nav className={`nav ${menuOpen ? 'open' : ''}`}>
           <ul>
-            <li><a href="#home" onClick={() => setMenuOpen(false)}>Início</a></li>
-            <li><a href="#sobre" onClick={() => setMenuOpen(false)}>Sobre</a></li>
-            <li><a href="#projetos" onClick={() => setMenuOpen(false)}>Projetos</a></li>
-            <li><a href="#habilidades" onClick={() => setMenuOpen(false)}>Habilidades</a></li>
-            <li><a href="#contato" onClick={() => setMenuOpen(false)}>Contato</a></li>
+            <li><NavLink to="/home" onClick={() => setMenuOpen(false)}>Início</NavLink></li>
+            <li><NavLink to="/sobre" onClick={() => setMenuOpen(false)}>Sobre</NavLink></li>
+            <li><NavLink to="/projetos" onClick={() => setMenuOpen(false)}>Projetos</NavLink></li>
+            <li><NavLink to="/habilidades" onClick={() => setMenuOpen(false)}>Habilidades</NavLink></li>
+            <li><NavLink to="/contato" onClick={() => setMenuOpen(false)}>Contato</NavLink></li>
           </ul>
         </nav>
-
-        {menuOpen && <div className="overlay"></div>}
       </div>
+      {menuOpen && <div className="overlay"></div>}
     </header>
   );
 }

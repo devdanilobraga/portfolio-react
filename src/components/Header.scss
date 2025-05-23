@@ -1,4 +1,3 @@
-
 .header {
   background-color: var(--bg);
   color: var(--text);
@@ -13,11 +12,6 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-  }
-
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
   }
 
   .header-actions {
@@ -49,6 +43,16 @@
       background-color: var(--text);
       border-radius: 2px;
       transition: all 0.3s ease;
+
+      &.open:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      &.open:nth-child(2) {
+        opacity: 0;
+      }
+      &.open:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
     }
   }
 
@@ -76,6 +80,23 @@
         color: var(--text);
         font-size: 1.2rem;
         font-weight: 500;
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          width: 0%;
+          height: 2px;
+          background-color: var(--primary);
+          transition: width 0.3s ease;
+        }
+
+        &:hover::after,
+        &.active::after {
+          width: 100%;
+        }
 
         &:hover {
           color: var(--primary);
@@ -94,9 +115,34 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 900;
   }
+
+
+@media (max-width: 767px) {
+  padding: 0.5rem 1rem;
+
+  .container {
+    align-items: center;
+    min-height: 30px;
+  }
+
+  .menu-toggle {
+    gap: 3px;
+
+    .bar {
+      width: 22px;
+      height: 2px;
+    }
+  }
+
+  .nav {
+    top: 5px; // para ficar logo abaixo do header mais fino
+  }
+}
+
+
 
   // Desktop
   @media (min-width: 768px) {
@@ -105,36 +151,31 @@
     }
 
     .nav {
-      position: absolute;
-      top: 70px;
-      left: 0;
-      width: 100%;
-      background-color: var(--bg);
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.4s ease;
-      z-index: 1000;
-      padding: 0 2rem;
+      transform: none;
+      position: static;
+      background: transparent;
+      padding: 0;
 
       ul {
-        flex-direction: column;
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        gap: 1.5rem;
-        opacity: 0;
-        transition: opacity 0.4s ease;
+        flex-direction: row;
+        gap: 2rem;
+
+        li a {
+          font-size: 1rem;
+
+          &::after {
+            bottom: -6px;
+          }
+        }
       }
 
       &.open {
-        max-height: 500px; // ou o valor necessário para caber os itens
-        padding: 2rem;
+        max-height: none;
         ul {
           opacity: 1;
         }
       }
     }
-
 
     .overlay {
       display: none;
