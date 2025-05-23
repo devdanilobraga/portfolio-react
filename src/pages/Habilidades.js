@@ -13,17 +13,20 @@ function Habilidades() {
       { name: 'JavaScript', icon: <FaJsSquare color="#F7DF1E" />, desc: 'Lógica e interatividade' },
       { name: 'AJAX', icon: <FaJsSquare color="#F7DF1E" />, desc: 'Requisições assíncronas com JS' },
       { name: 'React', icon: <FaReact color="#61DAFB" />, desc: 'Interfaces dinâmicas e SPA' },
-       { name: 'Angular', icon: <FaAngular color="#DD0031" />, desc: '' }
+      { name: 'Angular', icon: <FaAngular color="#DD0031" />, desc: 'Framework poderoso para SPAs em TypeScript' },
+      { name: 'Bootstrap', icon: <FaCss3Alt color="#563d7c" />, desc: 'Framework CSS para layouts responsivos' },
+     
     ],
     'Backend': [
       { name: 'Python', icon: <FaPython color="#306998" />, desc: 'Automação e backend versátil' },
       { name: 'Node.js', icon: <FaNodeJs color="#339933" />, desc: 'APIs e automações com JS' },
       { name: 'MySQL', icon: <FaDatabase color="#4479A1" />, desc: 'Modelagem e consultas de banco' },
+      { name: 'REST APIs', icon: <FaRobot color="#27ae60" />, desc: 'Comunicação entre sistemas via HTTP' }
     ],
     'Automação e Bots': [
-      { name: 'Bots WhatsApp', icon: <FaWhatsapp color="#25D366" />, desc: 'Atendimentos e notificações' },
-       { name: 'Bots Telegram', icon: <FaTelegramPlane color="#0088cc" /> },
-      { name: 'Automações', icon: <FaRobot color="#9b59b6" />, desc: 'Scripts para tarefas repetitivas' },
+      { name: 'Bots WhatsApp', icon: <FaWhatsapp color="#25D366" />, desc: 'Atendimentos e notificações automatizadas' },
+      { name: 'Bots Telegram', icon: <FaTelegramPlane color="#0088cc" />, desc: 'Bots inteligentes via API Telegram com Node.js ou Python' },
+      { name: 'Automações', icon: <FaRobot color="#9b59b6" />, desc: 'Scripts para tarefas repetitivas e integrações' },
     ],
     'Ferramentas': [
       { name: 'Git & GitHub', icon: <FaGitAlt color="#F05032" />, desc: 'Controle de versão e colaboração' },
