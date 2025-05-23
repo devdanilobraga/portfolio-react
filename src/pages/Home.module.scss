@@ -20,7 +20,7 @@ h4::after {
   height: 4px;
   background: url(https://img.lovepik.com/bg/20240416/Stunning-3D-Illustration-Futuristic-Tech-Style-Neon-Light-Stage-with_5839131_wh1200.jpg) repeat-x;
   background-size: auto; /* permite a repetição horizontal */
-  animation: scrollLine 30s linear infinite;
+  animation: scrollLine 40s linear infinite;
 }
 
 h4::before {
@@ -43,9 +43,10 @@ h4 span {
   background: url(https://img.lovepik.com/bg/20240416/Stunning-3D-Illustration-Futuristic-Tech-Style-Neon-Light-Stage-with_5839131_wh1200.jpg) repeat-y;
   -webkit-background-clip: text;
   background-clip: text;
+  background-size: auto; /* permite a repetição horizontal */
+  animation: scrollLine 40s linear infinite;
 
   -webkit-text-fill-color: transparent;
-  -webkit-animation: aitf 80s linear infinite;
 
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;

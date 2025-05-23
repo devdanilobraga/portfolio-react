@@ -1,9 +1,8 @@
 import './Header.scss';
 import { useState, useEffect } from 'react';
 import { Moon, Sun } from 'lucide-react';
-import { NavLink } from 'react-router-dom';
 
-function Header() {
+function Header({ scrollToSection, homeRef, sobreRef, habilidadesRef, projetosRef, contatoRef }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
 
@@ -41,16 +40,19 @@ function Header() {
           </button>
         </div>
 
+        {/* ⬇️ MOVA o nav para DENTRO da .container */}
         <nav className={`nav ${menuOpen ? 'open' : ''}`}>
           <ul>
-            <li><NavLink to="/home" onClick={() => setMenuOpen(false)}>Início</NavLink></li>
-            <li><NavLink to="/sobre" onClick={() => setMenuOpen(false)}>Sobre</NavLink></li>
-            <li><NavLink to="/projetos" onClick={() => setMenuOpen(false)}>Projetos</NavLink></li>
-            <li><NavLink to="/habilidades" onClick={() => setMenuOpen(false)}>Habilidades</NavLink></li>
-            <li><NavLink to="/contato" onClick={() => setMenuOpen(false)}>Contato</NavLink></li>
+            <li><button onClick={() => { scrollToSection(homeRef); setMenuOpen(false); }}>Início</button></li>
+            <li><button onClick={() => { scrollToSection(sobreRef); setMenuOpen(false); }}>Sobre</button></li>
+            <li><button onClick={() => { scrollToSection(projetosRef); setMenuOpen(false); }}>Projetos</button></li>
+            <li><button onClick={() => { scrollToSection(habilidadesRef); setMenuOpen(false); }}>Habilidades</button></li>
+            <li><button onClick={() => { scrollToSection(contatoRef); setMenuOpen(false); }}>Contato</button></li>
           </ul>
+
         </nav>
       </div>
+
       {menuOpen && <div className="overlay"></div>}
     </header>
   );
