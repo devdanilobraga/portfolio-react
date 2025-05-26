@@ -29,9 +29,11 @@
   }
 
   .menu-toggle {
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     gap: 5px;
+    z-index: 1002;
+    min-height: 20px;
 
     .bar {
       width: 25px;
@@ -43,9 +45,11 @@
       &.open:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
       }
+
       &.open:nth-child(2) {
         opacity: 0;
       }
+
       &.open:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -5px);
       }
@@ -139,13 +143,4 @@
       display: none;
     }
   }
-
-  .menu-toggle {
-  display: flex !important;
-  z-index: 1002; // acima de tudo
-   min-height: 20px;
-}
-
-
-
 }

@@ -14,17 +14,20 @@ function Header({ scrollToSection, homeRef, sobreRef, habilidadesRef, projetosRe
     document.body.style.overflow = menuOpen ? 'hidden' : 'auto';
   }, [menuOpen]);
 
-
   useEffect(() => {
     const handleOutsideClick = (e) => {
       if (!e.target.closest('.header')) {
         setMenuOpen(false);
       }
     };
+
     if (menuOpen) {
       document.addEventListener('click', handleOutsideClick);
     }
-    return () => document.removeEventListener('click', handleOutsideClick);
+
+    return () => {
+      document.removeEventListener('click', handleOutsideClick);
+    };
   }, [menuOpen]);
 
   return (
@@ -34,6 +37,7 @@ function Header({ scrollToSection, homeRef, sobreRef, habilidadesRef, projetosRe
           <button className="theme-toggle" onClick={() => setDarkMode(!darkMode)}>
             {darkMode ? <Sun size={20} /> : <Moon size={20} />}
           </button>
+
           <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
             <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
             <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
@@ -50,8 +54,9 @@ function Header({ scrollToSection, homeRef, sobreRef, habilidadesRef, projetosRe
             <li><button onClick={() => { scrollToSection(contatoRef); setMenuOpen(false); }}>Contato</button></li>
           </ul>
         </nav>
-      {menuOpen && <div className="overlay"></div>}
       </div>
+
+      {menuOpen && <div className="overlay"></div>}
     </header>
   );
 }
