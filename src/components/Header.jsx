@@ -14,6 +14,7 @@ function Header({ scrollToSection, homeRef, sobreRef, habilidadesRef, projetosRe
     document.body.style.overflow = menuOpen ? 'hidden' : 'auto';
   }, [menuOpen]);
 
+
   useEffect(() => {
     const handleOutsideClick = (e) => {
       if (!e.target.closest('.header')) {
@@ -40,7 +41,6 @@ function Header({ scrollToSection, homeRef, sobreRef, habilidadesRef, projetosRe
           </button>
         </div>
 
-        {/* ⬇️ MOVA o nav para DENTRO da .container */}
         <nav className={`nav ${menuOpen ? 'open' : ''}`}>
           <ul>
             <li><button onClick={() => { scrollToSection(homeRef); setMenuOpen(false); }}>Início</button></li>
@@ -49,11 +49,9 @@ function Header({ scrollToSection, homeRef, sobreRef, habilidadesRef, projetosRe
             <li><button onClick={() => { scrollToSection(habilidadesRef); setMenuOpen(false); }}>Habilidades</button></li>
             <li><button onClick={() => { scrollToSection(contatoRef); setMenuOpen(false); }}>Contato</button></li>
           </ul>
-
         </nav>
-      </div>
-
       {menuOpen && <div className="overlay"></div>}
+      </div>
     </header>
   );
 }

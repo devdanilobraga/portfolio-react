@@ -1,6 +1,7 @@
+/* OpeningScreen.module.css */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-.opening-container {
+.openingContainer {
   background-color: black;
   color: white;
   width: 100vw;
@@ -14,15 +15,15 @@
   animation: fadeIn 2s ease-in-out;
 }
 
-.opening-title {
-  font-size: clamp(1.2rem, 4vw, 2rem); /* Ajusta entre 1.2rem e 2rem baseado na largura da tela */
+.openingTitle {
+  font-size: clamp(1.2rem, 4vw, 2rem);
   margin: 0;
   animation: fadeInText 2s ease-in-out;
   word-break: break-word;
 }
 
-.opening-subtitle {
-  font-size: clamp(0.5rem, 2vw, 1rem); /* Responsivo também */
+.openingSubtitle {
+  font-size: clamp(0.5rem, 2vw, 1rem);
   margin-top: 10px;
   opacity: 0.8;
   word-break: break-word;
