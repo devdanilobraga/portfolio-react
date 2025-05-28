@@ -1,0 +1,97 @@
+[
+    {
+      "title": "Valor de Criptomoedas",
+      "link": "https://devdanilobraga.github.io/apiconsultacriptomoedas/",
+      "image": "assets/pagina-criptomoedas.png",
+      "description": "O site consulta o valor das criptomoedas, trazendo resultados em dólar (USD) e real (BRL).",
+      "technologies": ["HTML5", "CSS3", "JavaScript"],
+      "tags": ["Ajax", "API"]
+    },
+    {
+      "title": "Site Cristão",
+      "link": "https://devdanilobraga.github.io/site-cristao/",
+      "image": "assets/pagina-cristao.png",
+      "description": "Site que auxilia na leitura da Bíblia, inclui quiz e bloco de notas. Informações salvas no navegador.",
+      "technologies": ["HTML5", "CSS3", "JavaScript"]
+    },
+    {
+      "title": "Ping-Pong",
+      "link": "https://devdanilobraga.github.io/ping-pong/",
+      "image": "assets/pagina-ping-pong.png",
+      "description": "Jogo tradicional de ping-pong contra um bot. Desenvolvido para desktop.",
+      "technologies": ["HTML5", "CSS3", "JavaScript"]
+    },
+    {
+      "title": "Página em React e SASS",
+      "link": "https://estacaonoticias.onrender.com/show",
+      "image": "assets/pagina-estacao.png",
+      "description": "Blog de notícias intuitivo que permite ao usuário postar notícias. Desenvolvido com SASS e hospedado em domínio gratuito.",
+      "technologies": ["React", "SASS", "JavaScript"]
+    },
+    {
+      "title": "Jogo Asteroides",
+      "link": "https://devdanilobraga.github.io/asteroides/",
+      "image": "assets/pagina-asteroides.png",
+      "description": "Jogo simples de asteroides. O objetivo é destruir asteroides sem ser atingido. Desenvolvido para desktop.",
+      "technologies": ["HTML5", "CSS3", "JavaScript"]
+    },
+    {
+      "title": "Cadastro de Empresa",
+      "link": "https://devdanilobraga.github.io/agendamento/",
+      "image": "assets/pagina-cadastro-empresa.png",
+      "description": "Projeto criado para gerar PDFs com informações da empresa, auxiliando no design.",
+      "technologies": ["HTML5", "CSS3", "JavaScript"]
+    },
+    {
+      "title": "Gerenciador de Tarefas",
+      "link": "https://devdanilobraga.github.io/integracao/",
+      "image": "assets/pagina-gerenciador-tarefas.png",
+      "description": "Gerencia tarefas com banco de dados, permitindo editar e excluir tarefas.",
+      "technologies": ["HTML5", "CSS3", "JavaScript"],
+      "tags": ["Ajax", "MySQL"]
+    },
+    {
+      "title": "Página em HTML e CSS",
+      "link": "https://devdanilobraga.github.io/carou/",
+      "image": "assets/pagina-carou.png",
+      "description": "Projeto feito em HTML e CSS, com integração ao Spotify. A artista é real!",
+      "technologies": ["HTML5", "CSS3"]
+    },
+    {
+      "title": "Site em WordPress",
+      "link": "https://dev-pemasterapia.pantheonsite.io/",
+      "image": "assets/pagina-espaco-pema.png",
+      "description": "Site criado em WordPress. Diversificação no portfólio.",
+      "technologies": ["WordPress"]
+    },
+    {
+      "title": "Jogo Mario",
+      "link": "https://devdanilobraga.github.io/jogo-mario/",
+      "image": "assets/pagina-mario.png",
+      "description": "Jogo do Mario onde o objetivo é pular o máximo de canos possíveis. Compatível com desktop e mobile.",
+      "technologies": ["HTML5", "CSS3", "JavaScript"]
+    },
+    {
+      "title": "Chat",
+      "link": "https://devdanilobraga.github.io/chat/",
+      "image": "assets/chat.png",
+      "description": "Um pequeno chat com respostas automáticas e piadas. Ainda não utiliza API.",
+      "technologies": ["HTML5", "CSS3", "JavaScript"]
+    },
+    {
+      "title": "Calculadora de Gastos Gastronomia",
+      "link": "https://calculadoradegastronomia.netlify.app/",
+      "image": "assets/gastronomia.png",
+      "description": "Um site para com calculadora para pessoas que trabalham com venda saber quanto gastam em cada unidade.",
+      "technologies": ["HTML5", "CSS3", "JavaScript"]
+    },
+    {
+      "title": "Site com criptos, odd em esportes, surebet e calculadoras",
+      "link": "https://www.calculathor.site/",
+      "image": "assets/calculathor.png",
+      "description": "Site com diversas calculadora e ferramentas para auxiliar a vida dos trades. Tem dominio proprio, estamos fazendo o crescimento dele no ADS.",
+      "technologies": ["HTML5", "CSS3", "JavaScript", "React", "Node.js"]
+    }
+
+  ]
+  
