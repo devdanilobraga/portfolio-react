@@ -86,6 +86,13 @@
       "technologies": ["HTML5", "CSS3", "JavaScript"]
     },
     {
+      "title": "Site de Oficina e Curso",
+      "link": "https://oficina-seven.vercel.app/",
+      "image": "assets/TK-Garage.png",
+      "description": "Desenvolvimento de um site para oficina mecânica, otimizado para a experiência do usuário, com foco em facilitar a busca por serviços, agendamento online e informações relevantes sobre a empresa.",
+      "technologies": ["HTML5", "CSS3", "React", "SASS", "JavaScript"]
+    },
+    {
       "title": "Site com criptos, odd em esportes, surebet e calculadoras",
       "link": "https://www.calculathor.site/",
       "image": "assets/calculathor.png",
