@@ -16,24 +16,13 @@
     align-items: center;
   }
 
-  .social-icons {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-    flex-wrap: wrap;
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-    .icon-link {
-      font-size: 2rem;
-      color: var(--primary);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      filter: drop-shadow(0 0 5px var(--primary));
-
-      &:hover {
-        transform: scale(1.2);
-        box-shadow: 0 0 15px var(--primary);
-      }
-    }
-  }
 
   p {
     font-size: 0.9rem;
@@ -56,5 +45,58 @@
 
   p {
     font-size: 0.75rem;
+  }
+}
+
+.icon-link {
+  font-size: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &.linkedin {
+    color: #0077B5;
+    filter: drop-shadow(0 0 5px #0077B5);
+    &:hover {
+      box-shadow: 0 0 15px #0077B5;
+    }
+  }
+
+  &.github {
+  color: #171515;
+  filter: drop-shadow(0 0 5px #171515);
+
+  &:hover {
+    box-shadow: 0 0 15px #171515;
+  }
+
+  // Modo escuro (quando darkMode estiver ativado)
+  body.dark-theme & {
+    color: #ffffff;
+    filter: drop-shadow(0 0 5px #ffffff);
+
+    &:hover {
+      box-shadow: 0 0 15px #ffffff;
+    }
+  }
+}
+
+
+  &.whatsapp {
+    color: #25D366;
+    filter: drop-shadow(0 0 5px #25D366);
+    &:hover {
+      box-shadow: 0 0 15px #25D366;
+    }
+  }
+
+  &.email {
+    color: #D14836;
+    filter: drop-shadow(0 0 5px #D14836);
+    &:hover {
+      box-shadow: 0 0 15px #D14836;
+    }
   }
 }

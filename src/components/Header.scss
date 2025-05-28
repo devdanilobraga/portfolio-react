@@ -111,7 +111,7 @@
       }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 530px) {
       position: static;
       transform: none;
       background: transparent;
@@ -134,13 +134,47 @@
     z-index: 900;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 530px) {
     .menu-toggle {
       display: none;
     }
 
     .overlay {
       display: none;
+    }
+  }
+
+  
+
+  @media (min-width: 481px) and (max-width: 529px) {
+  .nav {
+    padding: 1.5rem;
+    margin-top: 0;
+  }
+
+  .header-actions {
+    margin-top: 80px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .menu-toggle {
+    scale: 0.9;
+  }
+}
+
+
+  @media (max-width: 530px){
+    .header-actions {
+      display: flex;
+      gap: 0.5rem;
+  }
+
+  .nav ul {
+    gap: 1rem;
+  }
+    .nav{
+      margin-top: -20px;
     }
   }
 }
