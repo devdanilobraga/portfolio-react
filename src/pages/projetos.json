@@ -15,6 +15,14 @@
       "technologies": ["HTML5", "CSS3", "JavaScript"]
     },
     {
+      "title": "FluxoEasy - Controle de Estoque e Vendas",
+      "link": "https://fluxoeasy.com.br", 
+      "image": "assets/fluxoeasy.png",
+      "description": "Sistema de controle de estoque e vendas desenvolvido em React, Node.js e PostgreSQL. Possui autenticação de usuários, níveis de acesso, relatórios e integração com gestão de armazéns. O projeto está em produção, com domínio próprio e divulgação ativa no Instagram, voltado para pequenos empreendedores que desejam controlar seu fluxo de forma prática.",
+      "technologies": ["React", "Node.js", "PostgreSQL", "SASS"],
+      "tags": ["Sistema em Produção", "Full Stack", "Marketing Digital"]
+    },
+    {
       "title": "Ping-Pong",
       "link": "https://devdanilobraga.github.io/ping-pong/",
       "image": "assets/pagina-ping-pong.png",
