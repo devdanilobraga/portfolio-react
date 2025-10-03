@@ -64,7 +64,7 @@ function Header({ scrollToSection, homeRef, sobreRef, habilidadesRef, projetosRe
             <a href="https://github.com/devdanilobraga" target="_blank" rel="noopener noreferrer" className="icon-link github">
               <FaGithub />
             </a>
-            <a href="https://wa.me/5521998766007" target="_blank" rel="noopener noreferrer" className="icon-link whatsapp">
+            <a href="https://wa.me/5521971536909" target="_blank" rel="noopener noreferrer" className="icon-link whatsapp">
               <FaWhatsapp />
             </a>
             <a href="mailto:danilobragam@gmail.com" className="icon-link email">
