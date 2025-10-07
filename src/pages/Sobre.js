@@ -1,4 +1,3 @@
-// src/pages/Sobre.js
 import './Sobre.scss';
 
 function Sobre() {
