@@ -1,7 +1,6 @@
 import './Habilidades.scss';
 import {
-  FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs,
-  FaDatabase, FaGitAlt, FaWhatsapp, FaRobot, FaPython,
+  FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaGitAlt, FaWhatsapp, FaRobot,
   FaAngular, FaTelegramPlane 
 } from 'react-icons/fa';
 
