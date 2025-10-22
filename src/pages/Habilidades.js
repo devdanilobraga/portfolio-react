@@ -2,8 +2,10 @@ import './Habilidades.scss';
 import {
   FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs,
   FaDatabase, FaGitAlt, FaWhatsapp, FaRobot, FaPython,
-  FaAngular, FaTelegramPlane
+  FaAngular, FaTelegramPlane 
 } from 'react-icons/fa';
+
+import { SiPostgresql, SiMysql } from 'react-icons/si'; 
 
 function Habilidades() {
   const habilidades = {
@@ -18,9 +20,9 @@ function Habilidades() {
      
     ],
     'Backend': [
-      { name: 'Python', icon: <FaPython color="#306998" />, desc: 'Automação e backend versátil' },
       { name: 'Node.js', icon: <FaNodeJs color="#339933" />, desc: 'APIs e automações com JS' },
-      { name: 'MySQL', icon: <FaDatabase color="#4479A1" />, desc: 'Modelagem e consultas de banco' },
+      { name: 'PostgreSQL', icon: <SiPostgresql color="#336791" />, desc: 'Banco de dados relacional robusto e escalável' },
+      { name: 'MySQL', icon: <SiMysql color="#4479A1" />, desc: 'Modelagem e consultas de banco' },
       { name: 'REST APIs', icon: <FaRobot color="#27ae60" />, desc: 'Comunicação entre sistemas via HTTP' }
     ],
     'Automação e Bots': [
