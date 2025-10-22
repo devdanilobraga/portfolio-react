@@ -23,6 +23,15 @@
       "tags": ["Sistema em Produção", "Full Stack", "Marketing Digital"]
     },
     {
+      "title": "Controle Operacional - Gestão de Notas Fiscais e Produtividade",
+      "link": "https://controleoperacional.vercel.app/",
+      "image": "assets/controleoperacional.png",
+      "description": "Sistema corporativo utilizado em todas as filiais da empresa para controle de entrada de notas fiscais, monitoramento da operação e rastreabilidade de processos logísticos. Desenvolvido em React e Node.js com integração ao PostgreSQL, o sistema inclui modo noturno, busca inteligente de notas fiscais, controle de produtividade por usuário, geração automática de etiquetas para paletes e painéis de acompanhamento em tempo real. O projeto está em uso contínuo na operação e é fundamental para o controle e auditoria do fluxo logístico.",
+      "technologies": ["React", "Node.js", "PostgreSQL", "SASS", "Bootstrap"],
+      "tags": ["Sistema Corporativo", "Full Stack", "Monitoramento em Tempo Real"]
+    },
+
+    {
       "title": "Ping-Pong",
       "link": "https://devdanilobraga.github.io/ping-pong/",
       "image": "assets/pagina-ping-pong.png",
