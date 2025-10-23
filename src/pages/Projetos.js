@@ -34,11 +34,11 @@ function Projetos() {
         {projetosFiltrados.map((proj, index) => (
           <div className="projeto-card" key={index}>
             <img src={proj.image} alt={proj.title} />
-            <h3>{proj.title}</h3>
             <p>{proj.description}</p>
             <div className="categoria">
               <span>{proj.categoria}</span>
             </div>
+            <h3>{proj.title}</h3>
             <div className="tecnologias">
               {proj.technologies.map((tec, i) => (
                 <span key={i}>{tec}</span>
