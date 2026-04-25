@@ -1,137 +1,162 @@
 [
-    {
-      "title": "Valor de Criptomoedas",
-      "link": "https://devdanilobraga.github.io/apiconsultacriptomoedas/",
-      "image": "assets/pagina-criptomoedas.png",
-      "description": "O site consulta o valor das criptomoedas, trazendo resultados em dólar (USD) e real (BRL).",
-      "technologies": ["HTML5", "CSS3", "JavaScript"],
-      "tags": ["Ajax", "API"],
-      "categoria": "Utilitários / Ferramentas"
-    },
-    {
-      "title": "Site Cristão",
-      "link": "https://devdanilobraga.github.io/site-cristao/",
-      "image": "assets/pagina-cristao.png",
-      "description": "Site que auxilia na leitura da Bíblia, inclui quiz e bloco de notas. Informações salvas no navegador.",
-      "technologies": ["HTML5", "CSS3", "JavaScript"],
-      "categoria": "Sites Institucionais"
-    },
-    {
-      "title": "FluxoEasy - Controle de Estoque e Vendas",
-      "link": "https://fluxoeasy.com.br", 
-      "image": "assets/fluxoeasy.png",
-      "description": "Sistema de controle de estoque e vendas desenvolvido em React, Node.js e PostgreSQL. Possui autenticação de usuários, níveis de acesso, relatórios e integração com gestão de armazéns. O projeto está em produção, com domínio próprio e divulgação ativa no Instagram, voltado para pequenos empreendedores que desejam controlar seu fluxo de forma prática.",
-      "technologies": ["React", "Node.js", "PostgreSQL", "SASS"],
-      "tags": ["Sistema em Produção", "Full Stack", "Marketing Digital"],
-      "categoria": "ERP / Sistemas"
-    },
-    {
-      "title": "Controle Operacional - Gestão de Notas Fiscais e Produtividade",
-      "link": "https://controleoperacional.vercel.app/",
-      "image": "assets/controleoperacional.png",
-      "description": "Sistema corporativo utilizado em todas as filiais da empresa para controle de entrada de notas fiscais, monitoramento da operação e rastreabilidade de processos logísticos. Desenvolvido em React e Node.js com integração ao PostgreSQL, o sistema inclui modo noturno, busca inteligente de notas fiscais, controle de produtividade por usuário, geração automática de etiquetas para paletes e painéis de acompanhamento em tempo real. O projeto está em uso contínuo na operação e é fundamental para o controle e auditoria do fluxo logístico.",
-      "technologies": ["React", "Node.js", "PostgreSQL", "SASS", "Bootstrap"],
-      "tags": ["Sistema Corporativo", "Full Stack", "Monitoramento em Tempo Real"],
-      "categoria": "ERP / Sistemas"
-    },
-
-    {
-      "title": "Ping-Pong",
-      "link": "https://devdanilobraga.github.io/ping-pong/",
-      "image": "assets/pagina-ping-pong.png",
-      "description": "Jogo tradicional de ping-pong contra um bot. Desenvolvido para desktop.",
-      "technologies": ["HTML5", "CSS3", "JavaScript"],
-      "categoria": "Jogos"
-    },
-    {
-      "title": "Página em React e SASS",
-      "link": "https://estacaonoticias.onrender.com/show",
-      "image": "assets/pagina-estacao.png",
-      "description": "Blog de notícias intuitivo que permite ao usuário postar notícias. Desenvolvido com SASS e hospedado em domínio gratuito.",
-      "technologies": ["React", "SASS", "JavaScript"],
-      "categoria": "Sites Institucionais"
-    },
-    {
-      "title": "Jogo Asteroides",
-      "link": "https://devdanilobraga.github.io/asteroides/",
-      "image": "assets/pagina-asteroides.png",
-      "description": "Jogo simples de asteroides. O objetivo é destruir asteroides sem ser atingido. Desenvolvido para desktop.",
-      "technologies": ["HTML5", "CSS3", "JavaScript"],
-      "categoria": "Jogos"
-    },
-    {
-      "title": "Cadastro de Empresa",
-      "link": "https://devdanilobraga.github.io/agendamento/",
-      "image": "assets/pagina-cadastro-empresa.png",
-      "description": "Projeto criado para gerar PDFs com informações da empresa, auxiliando no design.",
-      "technologies": ["HTML5", "CSS3", "JavaScript"],
-      "categoria": "Utilitários / Ferramentas"
-    },
-    {
-      "title": "Gerenciador de Tarefas",
-      "link": "https://devdanilobraga.github.io/integracao/",
-      "image": "assets/pagina-gerenciador-tarefas.png",
-      "description": "Gerencia tarefas com banco de dados, permitindo editar e excluir tarefas.",
-      "technologies": ["HTML5", "CSS3", "JavaScript"],
-      "tags": ["Ajax", "MySQL"],
-      "categoria": "Utilitários / Ferramentas"
-    },
-    {
-      "title": "Página em HTML e CSS",
-      "link": "https://devdanilobraga.github.io/carou/",
-      "image": "assets/pagina-carou.png",
-      "description": "Projeto feito em HTML e CSS, com integração ao Spotify. A artista é real!",
-      "technologies": ["HTML5", "CSS3"],
-      "categoria": "Sites Institucionais"
-    },
-    {
-      "title": "Site em WordPress",
-      "link": "https://dev-pemasterapia.pantheonsite.io/",
-      "image": "assets/pagina-espaco-pema.png",
-      "description": "Site criado em WordPress. Diversificação no portfólio.",
-      "technologies": ["WordPress"],
-      "categoria": "Sites Institucionais"
-    },
-    {
-      "title": "Jogo Mario",
-      "link": "https://devdanilobraga.github.io/jogo-mario/",
-      "image": "assets/pagina-mario.png",
-      "description": "Jogo do Mario onde o objetivo é pular o máximo de canos possíveis. Compatível com desktop e mobile.",
-      "technologies": ["HTML5", "CSS3", "JavaScript"],
-      "categoria": "Jogos"
-    },
-    {
-      "title": "Chat",
-      "link": "https://devdanilobraga.github.io/chat/",
-      "image": "assets/chat.png",
-      "description": "Um pequeno chat com respostas automáticas e piadas. Ainda não utiliza API.",
-      "technologies": ["HTML5", "CSS3", "JavaScript"],
-      "categoria": "Utilitários / Ferramentas"
-    },
-    {
-      "title": "Calculadora de Gastos Gastronomia",
-      "link": "https://calculadoradegastronomia.netlify.app/",
-      "image": "assets/gastronomia.png",
-      "description": "Um site para com calculadora para pessoas que trabalham com venda saber quanto gastam em cada unidade.",
-      "technologies": ["HTML5", "CSS3", "JavaScript"],
-      "categoria": "Utilitários / Ferramentas"
-    },
-    {
-      "title": "Site de Oficina e Curso",
-      "link": "https://oficina-seven.vercel.app/",
-      "image": "assets/TK-Garage.png",
-      "description": "Desenvolvimento de um site para oficina mecânica, otimizado para a experiência do usuário, com foco em facilitar a busca por serviços, agendamento online e informações relevantes sobre a empresa.",
-      "technologies": ["HTML5", "CSS3", "React", "SASS", "JavaScript"],
-      "categoria": "Sites Institucionais"
-    },
-    {
-      "title": "Site com criptos, odd em esportes, surebet e calculadoras",
-      "link": "https://www.calculathor.site/",
-      "image": "assets/calculathor.png",
-      "description": "Site com diversas calculadora e ferramentas para auxiliar a vida dos trades. Tem dominio proprio, estamos fazendo o crescimento dele no ADS.",
-      "technologies": ["HTML5", "CSS3", "JavaScript", "React", "Node.js"],
-      "categoria": "Jogos"
-    }
-
-  ]
-  
+  {
+    "title": "Catálogo Playstoria",
+    "link": "https://catalogo-playstoria.vercel.app/",
+    "image": "assets/playstoria.png",
+    "description": "Plataforma de catálogo de novelas short para cliente real. Sistema completo com autenticação, pagamento via Pix integrado (Efí Bank), controle de acesso por assinatura e banco de dados PostgreSQL. Projeto em produção.",
+    "technologies": ["React", "Node.js", "PostgreSQL", "SweetAlert2"],
+    "tags": ["Full Stack", "Pagamento Pix", "Sistema em Produção", "Cliente Real"],
+    "categoria": "ERP / Sistemas"
+  },
+  {
+    "title": "UniAgenda",
+    "link": "https://uniagenda-5qq2.vercel.app/",
+    "image": "assets/uniagenda.png",
+    "description": "Sistema de controle de agenda universitária desenvolvido para cliente. Permite gerenciar compromissos, aulas e eventos acadêmicos com interface intuitiva.",
+    "technologies": ["React", "SweetAlert2"],
+    "tags": ["Cliente Real", "Gestão Acadêmica"],
+    "categoria": "ERP / Sistemas"
+  },
+  {
+    "title": "Imersão DB",
+    "link": "https://imersaodb.vercel.app/",
+    "image": "assets/imersaodb.png",
+    "description": "Projeto de imersão criado para demonstrar domínio técnico em React, consumo de APIs e boas práticas de desenvolvimento frontend moderno.",
+    "technologies": ["React", "JavaScript", "SweetAlert2"],
+    "tags": ["Demonstração Técnica"],
+    "categoria": "Sites Institucionais"
+  },
+  {
+    "title": "Valor de Criptomoedas",
+    "link": "https://devdanilobraga.github.io/apiconsultacriptomoedas/",
+    "image": "assets/pagina-criptomoedas.png",
+    "description": "O site consulta o valor das criptomoedas, trazendo resultados em dólar (USD) e real (BRL).",
+    "technologies": ["HTML5", "CSS3", "JavaScript"],
+    "tags": ["Ajax", "API"],
+    "categoria": "Utilitários / Ferramentas"
+  },
+  {
+    "title": "Site Cristão",
+    "link": "https://devdanilobraga.github.io/site-cristao/",
+    "image": "assets/pagina-cristao.png",
+    "description": "Site que auxilia na leitura da Bíblia, inclui quiz e bloco de notas. Informações salvas no navegador.",
+    "technologies": ["HTML5", "CSS3", "JavaScript"],
+    "categoria": "Sites Institucionais"
+  },
+  {
+    "title": "FluxoEasy - Controle de Estoque e Vendas",
+    "link": "https://fluxoeasy.com.br",
+    "image": "assets/fluxoeasy.png",
+    "description": "Sistema de controle de estoque e vendas desenvolvido em React, Node.js e PostgreSQL. Possui autenticação de usuários, níveis de acesso, relatórios e integração com gestão de armazéns. O projeto está em produção, com domínio próprio e divulgação ativa no Instagram, voltado para pequenos empreendedores que desejam controlar seu fluxo de forma prática.",
+    "technologies": ["React", "Node.js", "PostgreSQL", "SASS"],
+    "tags": ["Sistema em Produção", "Full Stack", "Marketing Digital"],
+    "categoria": "ERP / Sistemas"
+  },
+  {
+    "title": "Controle Operacional",
+    "link": "https://controleoperacional.vercel.app/",
+    "image": "assets/controleoperacional.png",
+    "description": "Sistema corporativo utilizado em todas as filiais da empresa para controle de entrada de notas fiscais, monitoramento da operação e rastreabilidade de processos logísticos. Inclui modo noturno, busca inteligente, controle de produtividade por usuário e geração automática de etiquetas para paletes.",
+    "technologies": ["React", "Node.js", "PostgreSQL", "SASS", "Bootstrap"],
+    "tags": ["Sistema Corporativo", "Full Stack", "Monitoramento em Tempo Real"],
+    "categoria": "ERP / Sistemas"
+  },
+  {
+    "title": "Ping-Pong",
+    "link": "https://devdanilobraga.github.io/ping-pong/",
+    "image": "assets/pagina-ping-pong.png",
+    "description": "Jogo tradicional de ping-pong contra um bot. Desenvolvido para desktop.",
+    "technologies": ["HTML5", "CSS3", "JavaScript"],
+    "categoria": "Jogos"
+  },
+  {
+    "title": "Blog de Notícias",
+    "link": "https://estacaonoticias.onrender.com/show",
+    "image": "assets/pagina-estacao.png",
+    "description": "Blog de notícias intuitivo que permite ao usuário postar notícias. Desenvolvido com SASS e hospedado em domínio gratuito.",
+    "technologies": ["React", "SASS", "JavaScript"],
+    "categoria": "Sites Institucionais"
+  },
+  {
+    "title": "Jogo Asteroides",
+    "link": "https://devdanilobraga.github.io/asteroides/",
+    "image": "assets/pagina-asteroides.png",
+    "description": "Jogo simples de asteroides. O objetivo é destruir asteroides sem ser atingido. Desenvolvido para desktop.",
+    "technologies": ["HTML5", "CSS3", "JavaScript"],
+    "categoria": "Jogos"
+  },
+  {
+    "title": "Cadastro de Empresa",
+    "link": "https://devdanilobraga.github.io/agendamento/",
+    "image": "assets/pagina-cadastro-empresa.png",
+    "description": "Projeto criado para gerar PDFs com informações da empresa, auxiliando no design.",
+    "technologies": ["HTML5", "CSS3", "JavaScript"],
+    "categoria": "Utilitários / Ferramentas"
+  },
+  {
+    "title": "Gerenciador de Tarefas",
+    "link": "https://devdanilobraga.github.io/integracao/",
+    "image": "assets/pagina-gerenciador-tarefas.png",
+    "description": "Gerencia tarefas com banco de dados, permitindo editar e excluir tarefas.",
+    "technologies": ["HTML5", "CSS3", "JavaScript"],
+    "tags": ["Ajax", "MySQL"],
+    "categoria": "Utilitários / Ferramentas"
+  },
+  {
+    "title": "Página com Spotify",
+    "link": "https://devdanilobraga.github.io/carou/",
+    "image": "assets/pagina-carou.png",
+    "description": "Projeto feito em HTML e CSS, com integração ao Spotify. A artista é real!",
+    "technologies": ["HTML5", "CSS3"],
+    "categoria": "Sites Institucionais"
+  },
+  {
+    "title": "Site em WordPress",
+    "link": "https://dev-pemasterapia.pantheonsite.io/",
+    "image": "assets/pagina-espaco-pema.png",
+    "description": "Site criado em WordPress para clínica de terapia. Diversificação no portfólio.",
+    "technologies": ["WordPress"],
+    "categoria": "Sites Institucionais"
+  },
+  {
+    "title": "Jogo Mario",
+    "link": "https://devdanilobraga.github.io/jogo-mario/",
+    "image": "assets/pagina-mario.png",
+    "description": "Jogo do Mario onde o objetivo é pular o máximo de canos possíveis. Compatível com desktop e mobile.",
+    "technologies": ["HTML5", "CSS3", "JavaScript"],
+    "categoria": "Jogos"
+  },
+  {
+    "title": "Chat com Respostas Automáticas",
+    "link": "https://devdanilobraga.github.io/chat/",
+    "image": "assets/chat.png",
+    "description": "Um pequeno chat com respostas automáticas e piadas. Ainda não utiliza API.",
+    "technologies": ["HTML5", "CSS3", "JavaScript"],
+    "categoria": "Utilitários / Ferramentas"
+  },
+  {
+    "title": "Calculadora de Gastronomia",
+    "link": "https://calculadoradegastronomia.netlify.app/",
+    "image": "assets/gastronomia.png",
+    "description": "Calculadora para profissionais de gastronomia saberem o custo por unidade de cada produto.",
+    "technologies": ["HTML5", "CSS3", "JavaScript"],
+    "categoria": "Utilitários / Ferramentas"
+  },
+  {
+    "title": "Site de Oficina - TK Garage",
+    "link": "https://oficina-seven.vercel.app/",
+    "image": "assets/TK-Garage.png",
+    "description": "Site para oficina mecânica com foco em UX, facilitando a busca por serviços, agendamento online e informações sobre a empresa.",
+    "technologies": ["HTML5", "CSS3", "React", "SASS", "JavaScript"],
+    "categoria": "Sites Institucionais"
+  },
+  {
+    "title": "Calculathor",
+    "link": "https://www.calculathor.site/",
+    "image": "assets/calculathor.png",
+    "description": "Site com calculadoras e ferramentas para traders: criptomoedas, odds esportivas, surebet e mais. Possui domínio próprio e está em crescimento via ADS.",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "React", "Node.js"],
+    "tags": ["Sistema em Produção", "Marketing Digital"],
+    "categoria": "Utilitários / Ferramentas"
+  }
+]

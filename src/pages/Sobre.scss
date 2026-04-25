@@ -1,55 +1,313 @@
-// src/pages/Sobre.scss
+// ─── Section ─────────────────────────────────────────────────────────────────
 
 .sobre {
-  padding: 1rem 2rem 1rem;
+  padding: 6rem 1.25rem 5rem;
   background-color: var(--bg);
   color: var(--text);
   min-height: 100vh;
+  scroll-margin-top: 70px;
+}
 
-  .container {
-    max-width: 1100px;
-    margin: 0 auto;
+.sobre-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
 
-    h1 {
-      font-size: 2.8rem;
-      margin-bottom: 2rem;
-      text-align: center;
-      color: var(--primary);
-    }
+// ─── Cabeçalho ───────────────────────────────────────────────────────────────
 
-    .content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 2rem;
+.section-header {
+  text-align: center;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
 
-      @media (min-width: 768px) {
-        flex-direction: row;
-        align-items: flex-start;
-      }
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-      .perfil {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 3px solid var(--primary);
-        box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
-      }
+.section-title {
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.02em;
+}
 
-      .texto {
-        flex: 1;
+.section-sub {
+  font-size: 0.95rem;
+  color: var(--text-light, #aaa);
+  margin: 0 auto;
+  max-width: 400px;
+  line-height: 1.6;
+}
 
-        p {
-          font-size: 1.1rem;
-          line-height: 1.7;
-          margin-bottom: 1rem;
-        }
+// ─── Grid principal ───────────────────────────────────────────────────────────
 
-        strong {
-          color: var(--primary);
-        }
-      }
+.sobre-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3.5rem;
+  }
+}
+
+// ─── Aside — foto + info ──────────────────────────────────────────────────────
+
+.sobre-aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  flex-shrink: 0;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.45s ease 0.1s, transform 0.45s ease 0.1s;
+
+  &.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  @media (min-width: 768px) {
+    width: 210px;
+    align-items: flex-start;
+  }
+}
+
+// ─── Foto ────────────────────────────────────────────────────────────────────
+
+.perfil-wrap {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  flex-shrink: 0;
+
+  @media (min-width: 768px) {
+    width: 190px;
+    height: 190px;
+  }
+}
+
+.perfil-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary);
+  box-shadow: 0 0 0 6px rgba(0 255 255 / 0.08);
+  position: relative;
+  z-index: 1;
+  display: block;
+  transition: box-shadow 0.3s ease;
+
+  .perfil-wrap:hover & {
+    box-shadow: 0 0 0 8px rgba(0 255 255 / 0.15);
+  }
+}
+
+// anel decorativo giratório
+.perfil-ring {
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  border: 2px dashed rgba(0 255 255 / 0.25);
+  animation: spin 18s linear infinite;
+  pointer-events: none;
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+}
+
+// ─── Info list ───────────────────────────────────────────────────────────────
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  width: 100%;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.info-icon {
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.info-text {
+  font-size: 0.88rem;
+  color: var(--text-light, #aaa);
+}
+
+// ─── Botão currículo ─────────────────────────────────────────────────────────
+
+.btn-curriculo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary);
+  border: 1.5px solid var(--primary);
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: var(--primary);
+    color: #fff;
+    transform: translateY(-2px);
+  }
+}
+
+// ─── Conteúdo direito ────────────────────────────────────────────────────────
+
+.sobre-content {
+  flex: 1;
+  min-width: 0;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.45s ease 0.15s, transform 0.45s ease 0.15s;
+
+  &.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// ─── Texto ───────────────────────────────────────────────────────────────────
+
+.sobre-texto {
+  p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: var(--text);
+
+    &:last-child { margin-bottom: 0; }
+  }
+
+  strong {
+    color: var(--primary);
+    font-weight: 600;
+  }
+}
+
+// ─── Stats ───────────────────────────────────────────────────────────────────
+
+.stats-row {
+  display: flex;
+  gap: 0;
+  margin-top: 2rem;
+  border: 1px solid rgba(0 0 0 / 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+
+  body.dark-theme & {
+    border-color: rgba(255 255 255 / 0.08);
+  }
+}
+
+.stat-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+
+  &:not(:last-child) {
+    border-right: 1px solid rgba(0 0 0 / 0.08);
+
+    body.dark-theme & {
+      border-right-color: rgba(255 255 255 / 0.08);
     }
   }
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @for $i from 1 through 3 {
+    &:nth-child(#{$i}) {
+      transition-delay: #{0.2 + ($i - 1) * 0.08}s;
+    }
+  }
+}
+
+.stat-value {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.stat-label {
+  font-size: 0.72rem;
+  color: var(--text-light, #aaa);
+  margin-top: 0.3rem;
+  text-align: center;
+  line-height: 1.3;
+}
+
+// ─── Tech chips ───────────────────────────────────────────────────────────────
+
+.tech-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  background-color: rgba(0 0 0 / 0.04);
+  border: 1px solid rgba(0 0 0 / 0.08);
+  color: var(--text);
+  transition: border-color 0.2s, background-color 0.2s;
+
+  body.dark-theme & {
+    background-color: rgba(255 255 255 / 0.05);
+    border-color: rgba(255 255 255 / 0.1);
+  }
+
+  &:hover {
+    border-color: var(--primary);
+    background-color: rgba(0 255 255 / 0.05);
+  }
+}
+
+.chip-icon {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  filter: drop-shadow(0 0 3px currentColor);
 }

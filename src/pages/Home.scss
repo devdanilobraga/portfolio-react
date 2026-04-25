@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+// ─── Section ─────────────────────────────────────────────────────────────────
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 1.25rem;
+  background-color: var(--bg);
+  position: relative;
+  gap: 2.5rem;
+}
+
+// ─── Logo / título ───────────────────────────────────────────────────────────
+
+.home-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.home-title {
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  text-align: center;
+  padding: 1.2em 0;
+  margin: 0 auto;
+  width: 95%;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: url('https://wallpapers.com/images/featured/fundo-de-cores-de-neon-9fos0bpo77hq4xdw.jpg') repeat-x;
+    background-size: 600px auto;
+    // Anima de 0 até 600px (= background-size) — loop perfeito sem salto
+    animation: scrollLineMobile 40s linear infinite;
+
+    @media (min-width: 768px) {
+      background-size: 900px auto;
+      animation: scrollLineTablet 30s linear infinite;
+    }
+
+    @media (min-width: 1200px) {
+      background-size: 1200px auto;
+      animation: scrollLineDesktop 20s linear infinite;
+    }
+  }
+
+  &::before { top: 0; }
+  &::after  { bottom: 0; }
+}
+
+// ─── Nome ────────────────────────────────────────────────────────────────────
+
+.home-name {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: clamp(2.8rem, 12vw, 9rem);
+  line-height: 1;
+  letter-spacing: 0;
+  padding: 0.2em 0 0.28em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255 255 255 / 0.5);
+
+  background: url('https://wallpapers.com/images/featured/fundo-de-cores-de-neon-9fos0bpo77hq4xdw.jpg') repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 600px auto;
+  animation: scrollLineMobile 20s linear infinite;
+  -webkit-text-fill-color: transparent;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+
+  @media (min-width: 768px) {
+    background-size: 900px auto;
+    animation: scrollLineTablet 16s linear infinite;
+  }
+
+  @media (min-width: 1200px) {
+    background-size: 1200px auto;
+    animation: scrollLineDesktop 12s linear infinite;
+  }
+}
+
+// ─── Cargo ───────────────────────────────────────────────────────────────────
+
+.home-role {
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: clamp(0.75rem, 2.5vw, 1.4rem);
+  letter-spacing: 0.4em;
+  color: var(--primary);
+  margin-top: 0.4em;
+  opacity: 0.85;
+}
+
+// ─── Animações — cada uma move exatamente 1 tile (= background-size) ──────────
+// Mover px absolutos em vez de % elimina o salto no loop
+
+@keyframes scrollLineMobile {
+  0%   { background-position: 0 0; }
+  100% { background-position: 600px 0; }
+}
+
+@keyframes scrollLineTablet {
+  0%   { background-position: 0 0; }
+  100% { background-position: 900px 0; }
+}
+
+@keyframes scrollLineDesktop {
+  0%   { background-position: 0 0; }
+  100% { background-position: 1200px 0; }
+}
+
+// ─── CTAs ────────────────────────────────────────────────────────────────────
+
+.home-cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+%btn-base {
+  padding: 0.75rem 2rem;
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  font-weight: 600;
+  font-family: inherit;
+  border-radius: 999px;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  transition: transform 0.2s, opacity 0.2s, border-color 0.2s, color 0.2s;
+
+  &:hover {
+    transform: translateY(-2px);
+    opacity: 0.88;
+  }
+}
+
+.cta-primary {
+  @extend %btn-base;
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+}
+
+.cta-secondary {
+  @extend %btn-base;
+  background: none;
+  color: var(--text);
+  border: 1.5px solid rgba(0 0 0 / 0.18);
+
+  body.dark-theme & {
+    border-color: rgba(255 255 255 / 0.2);
+  }
+
+  &:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    opacity: 1;
+  }
+}
+
+// ─── Scroll hint ─────────────────────────────────────────────────────────────
+
+.scroll-hint {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: none;
+  border: 1.5px solid rgba(0 0 0 / 0.15);
+  color: var(--text-light, #aaa);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  animation: bounce 2s ease-in-out infinite;
+  transition: border-color 0.2s, color 0.2s;
+
+  body.dark-theme & {
+    border-color: rgba(255 255 255 / 0.15);
+  }
+
+  &:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%       { transform: translateX(-50%) translateY(6px); }
+}

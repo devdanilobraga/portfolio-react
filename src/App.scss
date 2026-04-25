@@ -2,40 +2,43 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg: #ffffff;
+  --bg-rgb: 255, 255, 255;
+  --text: #121212;
+  --text-light: #888888;
+  --primary: #007bff;
+}
+
+body.dark-theme {
+  --bg: #121212;
+  --bg-rgb: 18, 18, 18;
+  --text: #ffffff;
+  --text-light: #aaaaaa;
+  --primary: #4da3ff;   /* azul claro — contrasta bem no fundo escuro */
+}
+
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   font-family: Arial, sans-serif;
-  background: #f9f9f9;
-  color: #222;
+  background-color: var(--bg);
+  color: var(--text);
   min-width: 100%;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 main {
-  padding: 2rem;
+  padding: 0; /* removido o padding que deslocava as seções */
 }
 
 .btn {
-  background: #1e90ff;
+  background: var(--primary);
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
   margin-top: 1rem;
   display: inline-block;
-}
-
-:root {
-  --bg: #ffffff;
-  --text: #121212;
-  --primary: #007bff;
-}
-
-body.dark-theme {
-  --bg: #121212;
-  --text: #ffffff;
-  --primary: #24337B;
-  background-color: var(--bg);
-  color: var(--text);
 }

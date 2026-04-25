@@ -31,7 +31,7 @@ function App() {
         <>
           <Header scrollToSection={scrollToSection} homeRef={homeRef} sobreRef={sobreRef} habilidadesRef= {habilidadesRef} projetosRef={projetosRef} contatoRef={contatoRef}/>
           <main>
-            <div ref={homeRef}><Home /></div>
+            <div ref={homeRef}><Home scrollToSection={scrollToSection} sobreRef={sobreRef} projetosRef={projetosRef} /></div>
             <div ref={sobreRef}><Sobre /></div>
             <div ref={habilidadesRef}><Habilidades /></div>
             <div ref={projetosRef}><Projetos /></div>
